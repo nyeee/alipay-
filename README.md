@@ -35,14 +35,14 @@ import 路径按页面相对修改；
 is="cascade" 是模板名称，不可修改；
 data="{{...addrData}}" 是省市区、事件等数据，可修改  
 
-#### pages\addr\addr.acss
+* #### pages\addr\addr.acss
     
      @import '../../template/cascade/cascade.acss';
         
 import 路径按页面相对修改；
 这里将模板的样式引入到页面，如果你想改写一个样式，可以在文件内写同名样式，将自动覆盖这个引入样式；如果想重新写样式，就不引入  
 
-#### pages\addr\addr.js
+* #### pages\addr\addr.js
     
      所有代码和效果都在这里实现
         
