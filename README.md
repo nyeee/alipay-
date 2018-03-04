@@ -43,7 +43,9 @@ import 路径按页面相对修改；
 这里将模板的样式引入到页面，如果你想改写一个样式，可以在文件内写同名样式，将自动覆盖这个引入样式；如果想重新写样式，就不引入  
 
 #### pages\addr\addr.js
-```所有代码和效果都在这里实现```
+    
+     所有代码和效果都在这里实现
+        
 * 顶部把全国地址数据导入，如果是用请求的方式导入数据，可以在onLoad(){}里面写请求，如果数据结构和我不同，模板里面的市区的for遍历后也要修改
 > import { cityData } from '../../data/addrList' // 默认数据
 
@@ -55,14 +57,14 @@ import 路径按页面相对修改；
 >   sheng: [],// 省数据表   
 >   shi: [],// 市数据表  
 >   qu: [],//区  
->   provincename: '',// 最后选中的省 
->   cityname: '',// 市
->   areaname: '',// 区
->   value: [0, 0, 0],// 索引值:显示被选中的
->   cancel: 'showADDR',//取消事件
->   confirm: 'confirmADDR',//确定按钮事件
->   citychange: 'ChangeADDR',// 改变数据
->  },
+>   provincename: '',// 最后选中的省  
+>   cityname: '',// 市  
+>   areaname: '',// 区  
+>   value: [0, 0, 0],// 索引值:显示被选中的  
+>   cancel: 'showADDR',//取消事件  
+>   confirm: 'confirmADDR',//确定按钮事件  
+>   citychange: 'ChangeADDR',// 改变数据  
+>  },  
 > },
 
 *  写上相关的事件
