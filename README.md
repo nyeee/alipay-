@@ -45,30 +45,30 @@ import 路径按页面相对修改；
 
 #### pages\addr\addr.js
 __所有代码和效果都在这里实现__
-1、
-      import { cityData } from '../../data/addrList' // 默认数据
-顶部把全国地址数据导入，如果是用请求的方式导入数据，可以在onLoad(){}里面写请求
-2、
-      data: {
-       // 地址三联动-数据
-      addrData: {
-      addrPicker: false,//省市区联动-蒙层：显示隐藏
-      sheng: [],// 省数据表 
-      shi: [],// 市数据表
-      qu: [],//区
-      provincename: '',// 最后选中的省 
-      cityname: '',// 市
-      areaname: '',// 区
-      value: [0, 0, 0],// 索引值:显示被选中的
-      cancel: 'showADDR',//取消事件
-      confirm: 'confirmADDR',//确定按钮事件
-      citychange: 'ChangeADDR',// 改变数据
-      },
-    },
-在pages.data里面写需要的数据。
-3、
-      intProvinces() {},  intADDR() {},  showADDR() {},confirmADDR(){},ChangeADDR(){}
- 写上相关的事件。
+* 顶部把全国地址数据导入，如果是用请求的方式导入数据，可以在onLoad(){}里面写请求，如果数据结构和我不同，模板里面的市区的for遍历后也要修改
+    import { cityData } from '../../data/addrList' // 默认数据
+
+* 在pages.data里面写需要的数据
+     data: {
+     // 地址三联动-数据
+     addrData: {
+     addrPicker: false,//省市区联动-蒙层：显示隐藏
+     sheng: [],// 省数据表 
+     shi: [],// 市数据表
+     qu: [],//区
+     provincename: '',// 最后选中的省 
+     cityname: '',// 市
+     areaname: '',// 区
+     value: [0, 0, 0],// 索引值:显示被选中的
+     cancel: 'showADDR',//取消事件
+     confirm: 'confirmADDR',//确定按钮事件
+     citychange: 'ChangeADDR',// 改变数据
+     },
+     },
+
+*  写上相关的事件
+     intProvinces() {},  intADDR() {},  showADDR() {},confirmADDR(){},ChangeADDR(){}
+
   
    
 
