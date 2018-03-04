@@ -39,11 +39,8 @@ ___
      @import '../../template/cascade/cascade.acss';
         
 
-#### pages\addr\addr.js
+#### pages\addr\addr.js [所有代码和效果、事件都在这里实现]
 ###### *顶部把全国地址数据导入，如果是用请求的方式导入数据，可以在onLoad(){}里面写请求，如果数据结构和我不同，模板里面的市区的for遍历后也要修改*  
-    
-      所有代码和效果、事件都在这里实现
-        
  
 > import { cityData } from '../../data/addrList' // 默认数据
 
