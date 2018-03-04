@@ -25,7 +25,7 @@ ___
 模板包含弹窗蒙层就布局和样式，数据和事件写在pages页面中  
 
 ### pages下的页面引入
-#### pages\addr\addr.axml
+* #### pages\addr\addr.axml
     
      <!-- 模板 -->
     <import src="../../template/cascade/cascade.axml"/>
@@ -33,21 +33,21 @@ ___
     
 import 路径按页面相对修改；
 is="cascade" 是模板名称，不可修改；
-data="{{...addrData}}" 是省市区、事件等数据，可修改  
-#### pages\addr\addr.acss
+data="{{...addrData}}" 是省市区、事件等数据，可修改  
+- #### pages\addr\addr.acss
     
      @import '../../template/cascade/cascade.acss';
         
 import 路径按页面相对修改；
-这里将模板的样式引入到页面，如果你想改写一个样式，可以在文件内写同名样式，将自动覆盖这个引入样式；如果想重新写样式，就不引入  
-#### pages\addr\addr.js
+这里将模板的样式引入到页面，如果你想改写一个样式，可以在文件内写同名样式，将自动覆盖这个引入样式；如果想重新写样式，就不引入  
+* #### pages\addr\addr.js
     
      所有代码和效果都在这里实现
         
-* 顶部把全国地址数据导入，如果是用请求的方式导入数据，可以在onLoad(){}里面写请求，如果数据结构和我不同，模板里面的市区的for遍历后也要修改
+    * 顶部把全国地址数据导入，如果是用请求的方式导入数据，可以在onLoad(){}里面写请求，如果数据结构和我不同，模板里面的市区的for遍历后也要修改
 > import { cityData } from '../../data/addrList' // 默认数据
 
-* 在pages.data里面写需要的数据
+    * 在pages.data里面写需要的数据
 > data: {  
 >  // 地址三联动-数据  
 >  addrData: {  
@@ -65,7 +65,7 @@ import 路径按页面相对修改；
 >  },  
 > },
 
-*  写上相关的事件
+    *  写上相关的事件
 > intProvinces() {},  intADDR() {},  showADDR() {},confirmADDR(){},ChangeADDR(){}
  
   
