@@ -25,7 +25,7 @@ ___
 模板包含弹窗蒙层就布局和样式，数据和事件写在pages页面中  
 
 ### pages下的页面引入
-#### pages\addr\addr.axml
+* #### pages\addr\addr.axml
     
      <!-- 模板 -->
     <import src="../../template/cascade/cascade.axml"/>
