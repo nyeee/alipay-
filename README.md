@@ -35,7 +35,7 @@ import 路径按页面相对修改；
 is="cascade" 是模板名称，不可修改；
 data="{{...addrData}}" 是省市区、事件等数据，可修改  
 
-- #### pages\addr\addr.acss
+ - #### pages\addr\addr.acss
     
      @import '../../template/cascade/cascade.acss';
         
