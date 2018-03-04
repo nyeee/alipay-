@@ -1,0 +1,12 @@
+
+@import '../../template/cascade/cascade.acss';
+.item{
+    background: #fff;
+    height: 80rpx;
+    line-height: 80rpx;
+    padding: 0 30rpx;
+}
+.choose-content{
+    float: right;
+    color: #999;
+}

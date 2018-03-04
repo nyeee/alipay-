@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "pages/addr/addr"
+  ],
+  "window": {
+    "defaultTitle": "省市区三级联动"
+  }
+}

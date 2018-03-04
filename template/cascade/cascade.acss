@@ -1,0 +1,41 @@
+/* 省市区 ：三级联动*/
+
+.cascade_box{
+    font-size:28rpx;
+    width: 100%;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.cascade_hei{
+    width: 100%;
+    height:55%;
+    background: #000;
+    opacity: 0.5;
+}
+.cascade_find{
+    width: 100%;
+    height: 45%;
+    position: relative;
+    background: #fff;
+}
+
+.cascade_header{
+    width: 100%;
+    margin-bottom: 20rpx;
+    border-bottom: 1PX solid #eee;
+}
+.cascade_header .btn {
+    display: inline-block;
+    padding: 30rpx 35rpx;
+    cursor: pointer;
+}
+.cascade_header .btn:last-child {
+    float: right
+}
+.opacity{
+    opacity: .6
+}

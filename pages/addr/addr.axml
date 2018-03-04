@@ -1,0 +1,13 @@
+<view>
+  这里是你选中地址的位置
+  
+  <view class="item">
+    <text>所在地区</text>
+    <view class="choose-content" catchTap="showADDR">
+      <text style={{addrData.provincename?"color:#1a1a1a;":""}}>{{addrData.provincename?addrData.provincename+(addrData.provincename.charAt(addrData.provincename.length-1,1)=="市"?"":addrData.cityname)+addrData.areaname:"请选择"}}</text>
+    </view>
+  </view>
+  <!-- 模板 -->
+  <import src="../../template/cascade/cascade.axml"/>
+  <template is="cascade" data="{{...addrData}}" />
+</view>

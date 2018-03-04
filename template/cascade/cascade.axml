@@ -1,0 +1,25 @@
+<template name="cascade">
+  <view class="cascade_box" a:if="{{addrPicker}}">
+    <view class="cascade_hei" catchTap="{{cancel}}"></view>
+    <view class="cascade_find">
+      <view class="cascade_header">
+        <text class='btn' hover-class="opacity"  catchTap="{{cancel}}">取消</text>
+        <text class="btn main-color" hover-class="opacity" catchTap="{{confirm}}">确认</text>
+      </view>
+      
+     
+       <picker-view value="{{value}}"  onChange="{{citychange}}">
+        <picker-view-column>
+          <view a:for="{{sheng}}" a:key='this' >{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view a:for="{{shi}}" a:key='this'>{{item.label}}</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view a:for="{{qu}}" a:key='this' >{{item.label}}</view>
+        </picker-view-column>
+      </picker-view>
+    
+    </view>
+  </view>
+</template>
